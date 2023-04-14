@@ -11,17 +11,24 @@ import {
 function RegistrationPage() {
   const [formData, setFormData] = useState([]);
 
-
-  const [firstName , setFirstName] = useState("")
-  const [lastName , setLastName] = useState("")
-  const [email , setEmail] = useState("")
-  const [password , setPassword] = useState("")
-  const [confirmPassword , setConfirmPassword] = useState("")
-
- 
+  const [firstName , setFirstName] = useState("");
+  const [lastName , setLastName] = useState("");
+  const [email , setEmail] = useState("");
+  const [password , setPassword] = useState("");
+  const [confirmPassword , setConfirmPassword] = useState("");
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
+
+    const Data={
+        firstName,
+        lastName,
+        email,
+        password,
+        confirmPassword
+    }
+
+    setFormData([...formData ,Data]);
     localStorage.setItem('registrationData', JSON.stringify(formData));
     alert('Registration successful!');
   };
