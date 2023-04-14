@@ -56,10 +56,7 @@
 </p>
 
 
-Aéropostale, also called Aero, is an American shopping mall–based retailer of casual apparel and accessories, principally targeting young adults through its Aéropostale stores. Aéropostale maintains control over its proprietary brands by designing, sourcing, marketing, and selling all of its own merchandise.
 
-
-//image-one
 
 
 <br />
