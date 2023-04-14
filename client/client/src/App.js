@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/product/:id">
+          <Route path="/ProductPage">
             <ProductPage />
           </Route>
         </Switch>

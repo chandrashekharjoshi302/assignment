@@ -23,6 +23,9 @@ const Navbar = () => {
           <Link as={RouterLink} to="/register" mx={4}>
             Register
           </Link>
+          <Link as={RouterLink} to="/ProductPage" mx={4}>
+          ProductPage
+          </Link>
         </Box>
       </Flex>
     </Box>
