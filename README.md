@@ -63,7 +63,7 @@
 
 ## Screens ( All screens are responsive )
 - Homepage / Landing Page
-- Product Listing Page with Filters
+- Product Listing Page 
 - Single Product Description Page
 - Cart Page
 - Login Page
