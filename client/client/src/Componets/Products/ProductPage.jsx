@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SimpleGrid, Text, Box, Button } from '@chakra-ui/react';
+import { SimpleGrid, Text, Box, Button, Flex } from '@chakra-ui/react';
 import {
   Alert,
   AlertIcon,
@@ -47,7 +47,7 @@ function ProductPage() {
     //       You can view your wishlist on the wishlist page.
     //     </AlertDescription>
     //   </Alert>
-    alert(" Product successfully added to wishlist!")
+    alert("Product successfully added to wishlist!")
   };
 
   const handlePageChange = (np) => {
@@ -69,14 +69,19 @@ function ProductPage() {
           </Box>
         ))}
       </SimpleGrid>
-      <Button
-        onClick={() => handlePageChange(curPage - 1)}
-        disabled={curPage === 1}
-      >
-        Previous
-      </Button>
-      <Button>{curPage}</Button>
-      <Button onClick={() => handlePageChange(curPage + 1)}>Next</Button>
+      <Flex justifyContent="center" alignItems="center" mt="4">
+        <Button
+          onClick={() => handlePageChange(curPage - 1)}
+          disabled={curPage === 1}
+          mr="2"
+        >
+          Previous
+        </Button>
+        <Button mr="2">{curPage}</Button>
+        <Button onClick={() => handlePageChange(curPage + 1)} ml="2">
+          Next
+        </Button>
+      </Flex>
     </>
   );
 }

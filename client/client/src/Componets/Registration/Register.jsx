@@ -28,7 +28,7 @@ function RegistrationPage() {
         confirmPassword
     }
 
-    setFormData([...formData ,Data]);
+    setFormData(prevFormData => [...prevFormData, Data]);
     localStorage.setItem('registrationData', JSON.stringify(formData));
     alert('Registration successful!');
   };
